@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <title>Map Builder</title>
+
+    <link rel="stylesheet" type="text/css" href="/main.css">
+  </head>
+  <body>
+
+    <div id="map-builder">
+      <h1><%= username %></h1>
+      <h3>Swatches</h3>
+      <div class="palette">
+        <ul>
+          <li class="swatch grass selected"></li>
+          <li class="swatch flowers-red"></li>
+          <li class="swatch flowers-orange"></li>
+          <li class="swatch flowers-blue"></li>
+          <li class="swatch weed"></li>
+          <li class="swatch weed-4x"></li>
+          <li class="swatch weed-small"></li>
+          <li class="swatch weed-2x"></li>
+          <li class="swatch sand-patch"></li>
+          <li class="swatch box"></li>
+          <li class="swatch fence-nw"></li>
+          <li class="swatch fence-n"></li>
+          <li class="swatch fence-ne"></li>
+          <li class="swatch fence-w"></li>
+          <li class="swatch field"></li>
+          <li class="swatch fence-e"></li>
+          <li class="swatch fence-sw"></li>
+          <li class="swatch fence-s"></li>
+          <li class="swatch fence-se"></li>
+          <li class="swatch mountain-nw"></li>
+          <li class="swatch mountain-n"></li>
+          <li class="swatch mountain-ne"></li>
+          <li class="swatch mountain-w"></li>
+          <li class="swatch plateau"></li>
+          <li class="swatch mountain-e"></li>
+          <li class="swatch mountain-sw"></li>
+          <li class="swatch mountain-s"></li>
+          <li class="swatch mountain-se"></li>
+          <li class="swatch cave"></li>
+          <li class="swatch rock-1"></li>
+          <li class="swatch rock-2"></li>
+          <li class="swatch sign"></li>
+          <li class="swatch tree-1"></li>
+          <li class="swatch tree-2"></li>
+          <li class="swatch planter"></li>
+          <li class="swatch water-nw"></li>
+          <li class="swatch water-n"></li>
+          <li class="swatch water-ne"></li>
+          <li class="swatch water-w"></li>
+          <li class="swatch water"></li>
+          <li class="swatch water-e"></li>
+          <li class="swatch water-sw"></li>
+          <li class="swatch water-s"></li>
+          <li class="swatch water-se"></li>
+          <li class="swatch water-nw-inverse"></li>
+          <li class="swatch water-ne-inverse"></li>
+          <li class="swatch water-sw-inverse"></li>
+          <li class="swatch water-se-inverse"></li>
+          <li class="swatch sand"></li>
+          <li class="swatch sand-nw"></li>
+          <li class="swatch sand-n"></li>
+          <li class="swatch sand-ne"></li>
+          <li class="swatch sand-w"></li>
+          <li class="swatch sand-e"></li>
+          <li class="swatch sand-sw"></li>
+          <li class="swatch sand-s"></li>
+          <li class="swatch sand-se"></li>
+          <li class="swatch sand-nw-inverse"></li>
+          <li class="swatch sand-ne-inverse"></li>
+          <li class="swatch sand-sw-inverse"></li>
+          <li class="swatch sand-se-inverse"></li>
+        </ul>
+        <hr/>
+      </div>
+        
+      <input type="button" id="ImageHosting" value="Instructions"/>
+        
+      <h3 class = "save">Map Canvas</h3>
+
+      <div class="map">
+        <!-- map cells populated by JS -->
+      </div>
+
+    </div>
+
+    <h4> Save your map </h4>
+    <form method="post">
+      <input type="hidden" id="mapfield" type="text" name="mapstring"></p>
+      <p><input class = "save" type="submit"></p>
+    </form> 
+
+    <!-- load scripts -->
+    <script src="/lib/js/jquery-1.11.1.js"></script>
+    <script src="/map-builder.js"></script>
+    <script src="/player.js"></script>
+    <script src="/main.js"></script>  
+
+  </body>
+</html>

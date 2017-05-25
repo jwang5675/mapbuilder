@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <div class = "form">
+		<h1>Welcome, <%= username %></h1>
+		<h3>To create a new map, enter a new map name below:</h3>
+		<form method="post">
+		      <input  type="text" id="newmap" name="newmapname"></p>
+		      <!-- <p><input class = "save" type="submit"></p> -->
+		      <button class = "save"> submit </button>
+		</form>
+
+		<h3> Your Maps: </h3>
+		<div class = "maps">
+		  <!-- ajax to load your maps go here -->
+		</div>
+
+		<div>
+		<p class="message"> Click here to logout.
+			<a href="/login">Logout</a>
+		</p>
+		</div>
+  </div>
+
+  <div class = "form">
+		<h2> Find Your Friend's Maps!</h2>
+		<h3> To find your friends' map, type their username below: </h3>
+		<form method="post">
+		    <input  type="text" id = "findfriend" name="friendname"></p>
+		    <!-- <p><input class = "findfriendbutton" type="submit"></p> -->
+		    <button class = "findfriendbutton"> submit </button>
+		</form>
+
+		<div class = "friendmaps">
+			<!-- ajax to load friend maps go here -->
+		</div>
+
+		<!-- load scripts -->
+	    <script src="/lib/js/jquery-1.11.1.js"></script>
+	    <script src="/listbuilder.js"></script>
+  </div>
+</body>
+
+
+</html>
